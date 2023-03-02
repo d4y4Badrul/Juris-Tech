@@ -12,9 +12,17 @@ fetch('stores.json')
 function appendData(data) {
     let mainContainer = document.getElementById("nav-place");
     for (let i = 0; i < data.length; i++) {
-        let div = document.createElement("a");
-        div.classList.add('nav-link');
-        div.innerHTML = data[i].state ;
-        mainContainer.appendChild(div);
+        states = [];
+        console.log(states);
+        let s = data[i].state;
+        console.log('s');
+        if (!states.includes(s)){
+            states.push(s);
+            let div = document.createElement("a");
+            div.classList.add('nav-link');
+            div.innerHTML = s ;
+            mainContainer.appendChild(div);
+        }
+        
     }
 }
