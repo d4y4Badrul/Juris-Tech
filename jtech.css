@@ -1,0 +1,296 @@
+body {
+  background-color: #F6F8F9;
+  font-family: helvatica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  font-style: normal;
+  color: #343638;
+}
+
+.wrapper {
+  min-height: calc(100vh - 55px);
+}
+.wrapper .header {
+  z-index: 400;
+  background: #F6F8F9;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 0.5rem;
+}
+.wrapper .header__content {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  background: #F6F8F9;
+}
+.wrapper .header__content .logo-img {
+  max-width: 10%;
+}
+.wrapper .header .content-column {
+  width: 100%;
+  height: 5rem;
+}
+.wrapper .header .nav {
+  display: flex;
+  align-items: center;
+}
+.wrapper .header .nav1 {
+  padding-right: 3rem;
+  display: flex;
+}
+.wrapper .header .nav1 a {
+  color: #343638;
+  opacity: 0.5;
+}
+.wrapper .header .nav1 a :active {
+  opacity: 1;
+}
+.wrapper .header .nav1 .nav__link {
+  padding: 0 0 0 2.5rem;
+  text-decoration: none;
+}
+.wrapper .header .nav2 {
+  width: 2rem;
+  margin-right: 2rem;
+}
+.wrapper .header .nav2 img {
+  width: 4rem;
+}
+.wrapper .hero {
+  position: relative;
+  position: relative;
+  display: flex;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 759px;
+}
+.wrapper .hero-img {
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+}
+.wrapper .hero .overlay {
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  color: #FFFFFF;
+}
+.wrapper .hero .overlay .banner-sub {
+  justify-content: space-between;
+  position: absolute;
+  display: flex;
+  margin: 6rem 53rem 0rem;
+}
+.wrapper .hero .overlay .banner-sub a {
+  line-height: 20px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 7rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.wrapper .hero .overlay p {
+  line-height: 50px;
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  margin: 16rem 26rem 20rem;
+}
+.wrapper .hero .overlay .img-ava img {
+  bottom: 3rem;
+  left: 2.5rem;
+  line-height: 20px;
+  text-align: center;
+  font-size: 16px;
+  position: absolute;
+}
+.wrapper .hero .overlay .sub-ava a {
+  bottom: 4rem;
+  left: 8rem;
+  line-height: 20px;
+  text-align: center;
+  font-size: 16px;
+  position: absolute;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.wrapper .hero .overlay .nstory {
+  bottom: 3rem;
+  position: absolute;
+  right: 3rem;
+}
+.wrapper .hero .overlay .nstory img {
+  width: 41rem;
+}
+.wrapper .hero .overlay .nsub .container {
+  width: 28.5%;
+  right: 1rem;
+  position: absolute;
+  bottom: 10rem;
+}
+.wrapper .hero .overlay .nsub .container a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.wrapper .hero .overlay .nsub .container .carousel-control .glyphicon-chevron-right {
+  margin-top: -4rem;
+}
+.wrapper .story {
+  height: 100vh;
+}
+.wrapper .story__breadcrumb {
+  padding: 12rem 14.7rem;
+}
+.wrapper .story__breadcrumb .bread {
+  align-items: center;
+  display: flex;
+}
+.wrapper .story__breadcrumb .bread-logo {
+  display: inline-flex;
+}
+.wrapper .story__breadcrumb .bread-logo img {
+  width: 2rem;
+}
+.wrapper .story__breadcrumb .bread-title {
+  display: inline-flex;
+  padding-left: 2rem;
+}
+.wrapper .story__breadcrumb .bread-title .breadcrumb {
+  padding: unset;
+  margin: unset;
+  color: #A6ADB4;
+}
+.wrapper .story__breadcrumb .bread-title .breadcrumb a {
+  color: #343638;
+  text-decoration: none;
+}
+.wrapper .story__breadcrumb .bread-title a {
+  margin: 0 0.5rem;
+}
+.wrapper .story__breadcrumb .container-form {
+  margin-top: 2rem;
+  min-height: 51rem;
+  background: #FFFFFF;
+}
+.wrapper .story__breadcrumb .container-form .col-sm-6 {
+  padding: unset;
+}
+.wrapper .story__breadcrumb .container-form .banner-img img {
+  width: -webkit-fill-available;
+}
+.wrapper .story__breadcrumb .container-form .bg-white .newsletter {
+  padding: 6rem 10rem;
+}
+.wrapper .story__breadcrumb .container-form .bg-white .newsletter p {
+  padding-bottom: 2rem;
+}
+.wrapper .story__breadcrumb .container-form .bg-white .newsletter p select, .wrapper .story__breadcrumb .container-form .bg-white .newsletter p input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
+.wrapper .story__breadcrumb .container-form .bg-white .newsletter .sbutton {
+  border-radius: 0.5rem;
+  width: 30%;
+  height: 3rem;
+}
+.wrapper .articles {
+  height: 100vh;
+}
+.wrapper .articles .pale {
+  font-weight: 400;
+  color: #A6ADB4;
+}
+.wrapper .articles-sec {
+  padding: 0 14.7rem;
+}
+.wrapper .articles-sec .border-left {
+  padding-right: 7rem;
+  text-align: left;
+}
+.wrapper .articles-sec .border-left .dashed-line {
+  border: 2px dashed #EBEDED;
+}
+.wrapper .articles-sec .border-left .atitle {
+  padding-bottom: 2rem;
+}
+.wrapper .articles-sec .border-right {
+  border-left: 3px solid #EBEDED;
+}
+.wrapper .articles-sec .review {
+  margin: 3rem 2rem;
+}
+.wrapper .articles-sec .review-img {
+  display: inline-flex;
+}
+.wrapper .articles-sec .review-name {
+  display: inline-flex;
+}
+.wrapper .articles-sec .review-desc {
+  padding-bottom: 2rem;
+  font-weight: 400;
+}
+.wrapper .articles-sec .video iframe {
+  width: 95%;
+  height: 37vh;
+  border-radius: 1rem;
+  margin-left: 2rem;
+}
+.wrapper .places {
+  height: 100vh;
+}
+.wrapper .places-sec {
+  padding: 0 14.7rem;
+}
+.wrapper .places .nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 11rem;
+  background: #DEDEDE;
+}
+.wrapper .places-card {
+  margin: 0 -1.5rem;
+}
+.wrapper .places-card .card {
+  margin: 3rem 0 0;
+}
+.wrapper .places-card .card a {
+  min-height: 12rem;
+  background-color: #52E5BA;
+}
+
+footer {
+  background: #555555;
+  display: flex;
+}
+footer .footer-menu {
+  margin: 3rem 7rem;
+  width: 100%;
+}
+footer .footer-menu a {
+  color: #CBD0D3;
+}
+footer .footer-menu a :hover {
+  text-decoration: none;
+}
+footer .footer-menu .right {
+  margin: 0 5rem;
+  display: flex;
+  float: right;
+  justify-content: space-between;
+}
+footer .footer-menu .right .fa {
+  color: #CBD0D3;
+}
+footer .footer-logo img {
+  max-height: 20vh;
+}/*# sourceMappingURL=jtech.css.map */
