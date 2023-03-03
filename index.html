@@ -37,6 +37,7 @@
         </header>
         <section class="hero">
             <img class="hero-img" src="Image37.png" alt="Hero Banner">
+            <img class="hero-img-m" src="Image37m.png" alt="Hero Banner">
             <div class="overlay">
                 <p>AMAZING PLACES IN AMERICA TO VISIT</p>
                 <div class="banner-sub">
@@ -177,104 +178,17 @@
         <section class="places">
             <div class="places-sec">
                 <h1 class="atitle">Places</h1>
-                <nav id="nav-place" class="nav nav-pills nav-fill">
-<!--                     <a class="nav-link active" aria-current="page" href="#">Active</a>
-                    <a class="nav-link" href="#">Much longer nav link</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
-                </nav>
-                <div class="places-card">
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <a class="card-img-top" src="" alt="Card image cap"></a>
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <a class="card-img-top" alt="Card image cap"></a>
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                            </ul>
-                        </div>
-                    </div> 
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <a class="card-img-top" alt="Card image cap"></a>
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                            </ul>
-                        </div>
-                    </div> 
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <a class="card-img-top" alt="Card image cap"></a>
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <a class="card-img-top" alt="Card image cap"></a>
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                            </ul>
-                        </div>
-                    </div> 
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <a class="card-img-top" alt="Card image cap"></a>
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                            </ul>
-                        </div>
-                    </div> 
+                <ul id="pills-tab" class="nav nav-pills nav-fill mb-3" role="tablist">
+                </ul>
+                <!-- <div id="place" class="places-card">
+                </div> -->
+                <div class="tab-content" id="pills-tabContent">
                 </div>
             </div>
         </section>
     </div>
-    <footer>
-        <div class="footer-menu">
+    <footer class="footer">
+        <div class="footer-menu fdesk">
             <div class="col-sm-8">
                 <div class="col-sm-2 footer-logo">
                     <img src="pngtree-chill-sitting-capybara-png-image_6553139.png">
@@ -310,6 +224,43 @@
                 <i class="fa fa-facebook-f fa-lg"></i>
                 <i class="fa fa-globe fa-lg"></i>
             </div>
+        </div>
+        <div class="footer-menu fmob">
+            <div class="col-sm-12 mdes">
+                <!-- <div class="col-sm-2 footer-logo">
+                    <img src="pngtree-chill-sitting-capybara-png-image_6553139.png">
+                </div> -->
+                <div class="col-sm-2 footer-logo">
+                    <nav class="nav flex-column">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Discovery</a>
+                        <a class="nav-link" href="#">Photos</a>
+                        <a class="nav-link" href="#" >Contact</a>
+                    </nav>
+                </div>
+                <div class="col-sm-2 footer-logo">
+                    <nav class="nav flex-column">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                        <a class="nav-link" href="#">Help</a>
+                        <a class="nav-link" href="#">Terms</a>
+                        <a class="nav-link" href="#">Guidlines</a>
+                    </nav>
+                </div>
+                <div class="col-sm-2 footer-logo">
+                    <nav class="nav flex-column">
+                        <a class="nav-link active" aria-current="page" href="#">Testimonials</a>
+                        <a class="nav-link" href="#">Advertise</a>
+                        <a class="nav-link" href="#">Intergrations</a>
+                        <a class="nav-link" href="#">Careers</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 fmob">
+            <i class="fa fa-instagram fa-lg"></i>
+            <i class="fa fa-twitter fa-lg"></i>
+            <i class="fa fa-facebook-f fa-lg"></i>
+            <i class="fa fa-globe fa-lg"></i>
         </div>
     </footer>
     <script type="text/javascript" src="jtech.js"></script>
