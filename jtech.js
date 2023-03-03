@@ -9,9 +9,44 @@ fetch('stores.json')
         console.log('error: ' + err);
     });
 
+    //header menu
+    const navBtn = document.querySelector('#menu-btn');
+    const nav = document.querySelector('nav');
+    const navLinks = document.querySelector('.nav-links');
+    
+    navBtn.addEventListener('click', () => {
+      navLinks.classList.add('activated');
+      const isExpanded = JSON.parse(navBtn.getAttribute('aria-expanded'));
+      navBtn.setAttribute('aria-expanded', !isExpanded);
+      !isExpanded && nav.classList.add('active');
+    })
+    
+    //INTERSECTION OBSERVER
+    
+    const navObs = new IntersectionObserver((entries) => nav.classList.toggle('active', !entries[0].isIntersecting)
+    , {threshold: .85})
+    
+    navObs.observe(document.querySelector('header'));
+    
+    const fadeUpObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('faded');
+          fadeUpObserver.unobserve(entry.target)
+        }
+      })
+    }, {
+      rootMargin: '-15%'
+    })
+    
+    document.querySelectorAll('.fade-up').forEach(el => {
+      fadeUpObserver.observe(el);
+    })
+
+//places tab menu
 function appendData(data) {
     let mainContainer = document.getElementById("pills-tab");
-    // let cardContainer = document.getElementById("place");
+    let cdrMobile = document.getElementById("pills-tab1");
     let tabDetails = document.getElementById("pills-tabContent");
     const states = [];
     for (let i = 0; i < data.length; i++) {
@@ -25,6 +60,12 @@ function appendData(data) {
             div.setAttribute("role","presentation");
             div.innerHTML = '<button class="nav-link" id="pills-'+dstate+'-tab" data-bs-toggle="pill" data-bs-target="#pills-'+dstate+'" type="button" role="tab" aria-controls="pills-'+dstate+'" aria-selected="false">'+data[i].state+'</button>';
             mainContainer.appendChild(div);
+
+            let divm = document.createElement("li");
+            divm.classList.add('nav-item');
+            divm.setAttribute("role","presentation");
+            divm.innerHTML = '<button class="nav-link" id="pills-'+dstate+'-tab" data-bs-toggle="pill" data-bs-target="#pills-'+dstate+'" type="button" role="tab" aria-controls="pills-'+dstate+'" aria-selected="false">'+data[i].state+'</button>';
+            cdrMobile.appendChild(divm);
 
             // specific states
             let tab = document.createElement("div");
@@ -46,6 +87,7 @@ function appendData(data) {
         };
     };
 
+    //all true status
     let cardContainer = document.getElementById("pills-tabContent");
     let tab = document.createElement("div");
     tab.classList.add('tab-pane', 'fade', 'active', 'show');
