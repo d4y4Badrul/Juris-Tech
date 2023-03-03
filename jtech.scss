@@ -349,12 +349,55 @@ body {
                     padding: unset;
                 }
 
-                .banner-img {
-                    img {
-                        width: -webkit-fill-available;
-                        height: auto;
+                .border-bottom {
+                    border-bottom: 3px solid #FA6980 !important;
+                }
+
+                .banner {
+                    
+                    &-img {
+                        img {
+                            width: -webkit-fill-available;
+                            height: auto;
+                        }
+                    }
+
+                    &-text {
+                        position: absolute;
+                        text-align: center;
+                        align-items: center;
+                        display: flex;
+                        // width: 100%;
+                        color: #FFFFFF;
+                        font-weight: 600;
+
+                        p {
+                            width: 100%;
+                        }
+                    }
+
+                    &-title {
+                        top: 30%;
+                        left: 38%;
+                        font-size: 4rem;
+                    }
+
+                    &-desc {
+                        top: 43%;
+                        left: 0;
+                        font-size: 2rem;
+                    }
+
+                    &-img-ava {
+                        position: absolute;
+                        text-align: center;
+                        align-items: center;
+                        display: flex;
+                        top: 55%;
+                        left: 45%;
                     }
                 }
+                
 
                 .bg-white {
                     border-radius: 1rem;
@@ -600,6 +643,20 @@ body {
 
                     .col-sm-6 {
                         padding: unset;
+                    }
+
+                    .banner {
+                        &-title {
+                            top: 30%;
+                            font-size: 2rem;
+                            left: 41%;
+                        }
+    
+                        &-desc {
+                            top: 43%;
+                            font-size: 1rem;
+                            left: 3%;
+                        }
                     }
 
                     .bg-white {
