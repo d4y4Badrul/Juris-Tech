@@ -49,6 +49,7 @@ function appendData(data) {
     let cdrMobile = document.getElementById("pills-tab1");
     let tabDetails = document.getElementById("pills-tabContent");
     const states = [];
+    mainContainer.innerHTML = '<li class="nav-item" role="presentation"><button class="nav-link" id="pills-default-tab" data-bs-toggle="pill" data-bs-target="#pills-default" type="button" role="tab" aria-controls="pills-default" aria-selected="false"></button></li>';
     for (let i = 0; i < data.length; i++) {
         // states nav tab
         let notinclude = !states.includes(data[i].state);
@@ -71,7 +72,7 @@ function appendData(data) {
             let tab = document.createElement("div");
             tab.classList.add('tab-pane', 'fade');
             tab.setAttribute("id","pills-"+dstate);
-            tab.setAttribute("role","tabpanel");
+            tab.setAttribute("role","tabpane");
             tab.setAttribute("aria-labelledby","pills-"+dstate+"-tab");
             tab.innerHTML = '<div id="place'+dstate+'" class="places-card"></div>';
             tabDetails.appendChild(tab);
@@ -92,7 +93,7 @@ function appendData(data) {
     let tab = document.createElement("div");
     tab.classList.add('tab-pane', 'fade', 'active', 'show');
     tab.setAttribute("id","pills-default");
-    tab.setAttribute("role","tabpanel");
+    tab.setAttribute("role","tabpane");
     tab.setAttribute("aria-labelledby","pills-default-tab");
     tab.innerHTML = '<div id="default" class="places-card"></div>';
     cardContainer.appendChild(tab);
