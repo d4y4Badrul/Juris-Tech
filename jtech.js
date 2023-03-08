@@ -49,7 +49,7 @@ function appendData(data) {
     let cdrMobile = document.getElementById("pills-tab1");
     let tabDetails = document.getElementById("pills-tabContent");
     const states = [];
-    mainContainer.innerHTML = '<li class="nav-item active" role="presentation" hidden><button class="nav-link" id="pills-default-tab" data-bs-toggle="pill" data-bs-target="#pills-default" type="button" role="tab" aria-controls="pills-default" aria-selected="false"></button></li>';
+    mainContainer.innerHTML = '<li class="nav-item active" role="presentation" style="display:none"><button class="nav-link" id="pills-default-tab" data-bs-toggle="pill" data-bs-target="#pills-default" type="button" role="tab" aria-controls="pills-default" aria-selected="false"></button></li>';
     for (let i = 0; i < data.length; i++) {
         // states nav tab
         let notinclude = !states.includes(data[i].state);
